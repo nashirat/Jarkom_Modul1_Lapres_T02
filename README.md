@@ -18,7 +18,7 @@ http.host == testing.mekanis.me
 
 Lalu follow TCP Stream
 
-![Step 2](./images/No1/2.png/)
+![Step 2](./images/No1/2.PNG/)
 
 #### No. 2
 Simpan gambar "Tim_Kunjungan_Kerja_BAKN_DPR_RI_ke_Sukabumi141436.jpg"!
@@ -47,7 +47,7 @@ http.request.method == POST
 
 Lalu follow TCP Stream
 
-![Step 2](./images/No3/2.png/)
+![Step 2](./images/No3/2.PNG/)
 
 #### No. 4
 Temukan paket dari web-web yang menggunakan basic authentication method!
@@ -57,7 +57,7 @@ Gunakan filter :
 ```
 HTTP
 ```
-![Step 1](./images/No4/1.png/)
+![Step 1](./images/No4/1.PNG/)
 
 Karena semua website HTTP masih menggunakan basic authentication
 
@@ -69,15 +69,15 @@ Gunakan filter packet :
 ```
 (ip.dst == 157.245.50.224 || ip.src == 157.245.50.224) && http
 ```
-![Step 1](./images/No5/1.png/)
+![Step 1](./images/No5/1.PNG/)
 
 Maka didapatkan username dan Password
 
-![Step 2](./images/No5/2.png/)
+![Step 2](./images/No5/2.PNG/)
 
 Lalu lakukan sesuai perintah
 
-![Step 3](./images/No5/3.png/)
+![Step 3](./images/No5/3.PNG/)
 
 #### No. 6
 Seseorang menyimpan file zip melalui FTP dengan nama "Answer.zip". Simpan dan Buka file "Open This.pdf" di Answer.zip. Untuk mendapatkan password zipnya, temukan dalam file zipkey.txt (passwordnya adalah isi dari file txt tersebut).
@@ -91,12 +91,12 @@ ftp-data
 
 Pilih "Answer.zip", show and save data as "Raw", Save.
 
-![Step 1](./images/No6/2.png/)
+![Step 1](./images/No6/2.PNG/)
 
 Lalu follow zipkey.txt, itu passwordnya.
 
 ![Step 1](./images/No6/3.png/)
-![Step 1](./images/No6/4.png/)
+![Step 1](./images/No6/4.PNG/)
 
 
 #### No. 7
@@ -112,7 +112,7 @@ ftp-data contains "Yes.pdf"
 
 Follow stream file yang masuk akal, lalu save as raw seperti biasa.
 
-![Step 1](./images/No7/2.png/)
+![Step 1](./images/No7/2.PNG/)
 
 #### No. 8
 Cari objek apa saja yang didownload (RETR) dari koneksi FTP dengan Microsoft FTP Service!
@@ -132,7 +132,7 @@ Gunakan filter :
 ```
 ftp.request.command == USER || ftp.request.command == PASS
 ```
-![Step 1](./images/No9/1.png/)
+![Step 1](./images/No9/1.PNG/)
 
 #### No. 10
 Cari file .pdf di wireshark lalu download dan buka file tersebut!
@@ -143,7 +143,7 @@ Gunakan filter :
 ```
 http contains ".pdf"
 ```
-![Step 1](./images/No10/1.png/)
+![Step 1](./images/No10/1.PNG/)
 
 ### Capture Filter
 
@@ -155,7 +155,7 @@ Gunakan Capture Filter :
 ```
 port 21
 ```
-![Step 1](./images/No11/1.png/)
+![Step 1](./images/No11/1.PNG/)
 
 #### No. 12
 Filter sehingga wireshark hanya mengambil paket yang berasal dari port 80!
@@ -165,7 +165,7 @@ Gunakan Capture Filter :
 ```
 src port 21
 ```
-![Step 1](./images/No12/1.png/)
+![Step 1](./images/No12/1.PNG/)
 
 #### No. 13
 Filter sehingga wireshark hanya mengambil paket yang menuju  port 443!
@@ -175,7 +175,7 @@ Gunakan Capture Filter :
 ```
 dst port 443
 ```
-![Step 1](./images/No13/1.png/)
+![Step 1](./images/No13/1.PNG/)
 
 #### No. 14
 Filter sehingga wireshark hanya mengambil paket yang berasal dari ip kalian!
@@ -185,7 +185,7 @@ Pertama cari IP address anda terlebih dahulu lalu lakukan capture ip.address = `
 ```
 src 36.68.219.141
 ```
-![Step 1](./images/No14/1.png/)
+![Step 1](./images/No14/1.PNG/)
 
 #### No. 15
 Filter sehingga wireshark hanya mengambil paket yang tujuannya ke monta.if.its.ac.id!
@@ -195,5 +195,5 @@ Capture filter dengan tujuan monta.if.its.ac.id
 ```
 dst monta.if.its.ac.id
 ```
-![Step 1](./images/No15/1.png/)
+![Step 1](./images/No15/1.PNG/)
 
