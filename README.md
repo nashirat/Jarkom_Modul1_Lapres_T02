@@ -2,8 +2,8 @@
 # Lapres Modul 1 Jarkom T02 2020
 
 ### Oleh:
-- Muhammad Sulthon Nashir (05111740000171)
-- namamu gas
+- Muhammad Sulthon Nashir (0511174000017)
+- Bagas Immanuel Lodianto (05311840000026)
 
 ### Display Filter
 #### No. 1
@@ -13,7 +13,12 @@ Gunakan filter :
 ```
 http.host == testing.mekanis.me
 ```
+
+![Step 1](./images/No1/1.png/)
+
 Lalu follow TCP Stream
+
+![Step 2](./images/No1/2.png/)
 
 #### No. 2
 Simpan gambar "Tim_Kunjungan_Kerja_BAKN_DPR_RI_ke_Sukabumi141436.jpg"!
@@ -37,7 +42,12 @@ Gunakan filter :
 ```
 http.request.method == POST
 ```
-Lalu Follow TCP Stream
+
+![Step 1](./images/No3/1.png/)
+
+Lalu follow TCP Stream
+
+![Step 2](./images/No3/2.png/)
 
 #### No. 4
 Temukan paket dari web-web yang menggunakan basic authentication method!
@@ -47,6 +57,8 @@ Gunakan filter :
 ```
 HTTP
 ```
+![Step 1](./images/No4/1.png/)
+
 Karena semua website HTTP masih menggunakan basic authentication
 
 #### No. 5
@@ -55,8 +67,17 @@ Ikuti perintah di aku.pengen.pw! Username dan password bisa didapatkan dari file
 ##### Penyelesaian
 Gunakan filter packet :
 ```
-(ip.dst == 157.245.50.224 || ip.src == 157.245.50.224) && HTTP
+(ip.dst == 157.245.50.224 || ip.src == 157.245.50.224) && http
 ```
+![Step 1](./images/No5/1.png/)
+
+Maka didapatkan username dan Password
+
+![Step 1](./images/No5/2.png/)
+
+Lalu lakukan sesuai perintah
+
+![Step 1](./images/No5/3.png/)
 
 #### No. 6
 Seseorang menyimpan file zip melalui FTP dengan nama "Answer.zip". Simpan dan Buka file "Open This.pdf" di Answer.zip. Untuk mendapatkan password zipnya, temukan dalam file zipkey.txt (passwordnya adalah isi dari file txt tersebut).
@@ -111,3 +132,54 @@ http contains ".pdf"
 Follow stream, lalu save bagian TCP Payload
 
 ### Capture Filter
+
+#### No. 11
+Filter sehingga wireshark hanya mengambil paket yang mengandung port 21!
+
+##### Penyelesaian
+Gunakan Capture Filter : 
+```
+port 21
+```
+![Step 1](./images/No11/1.png/)
+
+#### No. 12
+Filter sehingga wireshark hanya mengambil paket yang berasal dari port 80!
+
+##### Penyelesaian
+Gunakan Capture Filter : 
+```
+src port 21
+```
+![Step 1](./images/No12/1.png/)
+
+#### No. 13
+Filter sehingga wireshark hanya mengambil paket yang menuju  port 443!
+
+##### Penyelesaian
+Gunakan Capture Filter : 
+```
+dst port 443
+```
+![Step 1](./images/No13/1.png/)
+
+#### No. 14
+Filter sehingga wireshark hanya mengambil paket yang berasal dari ip kalian!
+
+##### Penyelesaian
+Pertama cari IP address anda terlebih dahulu lalu lakukan capture ip.address = ` ip address anda`
+```
+src 36.68.219.141
+```
+![Step 1](./images/No14/1.png/)
+
+#### No. 15
+Filter sehingga wireshark hanya mengambil paket yang tujuannya ke monta.if.its.ac.id!
+
+##### Penyelesaian
+Capture filter dengan tujuan monta.if.its.ac.id
+```
+dst monta.if.its.ac.id
+```
+![Step 1](./images/No15/1.png/)
+
