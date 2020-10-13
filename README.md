@@ -73,11 +73,11 @@ Gunakan filter packet :
 
 Maka didapatkan username dan Password
 
-![Step 1](./images/No5/2.png/)
+![Step 2](./images/No5/2.png/)
 
 Lalu lakukan sesuai perintah
 
-![Step 1](./images/No5/3.png/)
+![Step 3](./images/No5/3.png/)
 
 #### No. 6
 Seseorang menyimpan file zip melalui FTP dengan nama "Answer.zip". Simpan dan Buka file "Open This.pdf" di Answer.zip. Untuk mendapatkan password zipnya, temukan dalam file zipkey.txt (passwordnya adalah isi dari file txt tersebut).
@@ -87,9 +87,17 @@ Gunakan filter
 ```
 ftp-data
 ```
+![Step 1](./images/No6/1.png/)
+
 Pilih "Answer.zip", show and save data as "Raw", Save.
 
+![Step 1](./images/No6/2.png/)
+
 Lalu follow zipkey.txt, itu passwordnya.
+
+![Step 1](./images/No6/3.png/)
+![Step 1](./images/No6/4.png/)
+
 
 #### No. 7
 Ada 500 file zip yang disimpan ke FTP Server dengan nama 1.zip, 2.zip, ..., 500.zip. Salah satunya berisi pdf yang berisi puisi. Simpan dan Buka file pdf tersebut.
@@ -100,7 +108,11 @@ Gunakan filter :
 ```
 ftp-data contains "Yes.pdf"
 ```
+![Step 1](./images/No7/1.png/)
+
 Follow stream file yang masuk akal, lalu save as raw seperti biasa.
+
+![Step 1](./images/No7/2.png/)
 
 #### No. 8
 Cari objek apa saja yang didownload (RETR) dari koneksi FTP dengan Microsoft FTP Service!
@@ -120,6 +132,8 @@ Gunakan filter :
 ```
 ftp.request.command == USER || ftp.request.command == PASS
 ```
+![Step 1](./images/No9/1.png/)
+
 #### No. 10
 Cari file .pdf di wireshark lalu download dan buka file tersebut!
 clue: "25 50 44 46"
@@ -129,7 +143,7 @@ Gunakan filter :
 ```
 http contains ".pdf"
 ```
-Follow stream, lalu save bagian TCP Payload
+![Step 1](./images/No10/1.png/)
 
 ### Capture Filter
 
