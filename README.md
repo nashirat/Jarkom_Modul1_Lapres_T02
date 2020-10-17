@@ -28,11 +28,13 @@ Filter dengan
 ```
 HTTP
 ```
+![Step 1](./images/No2/no2.png/)
 Lalu
 ```
 Export Object >> http
 ```
 Cari file gambar yang dimaksud, Save.
+![Step 2](./images/No2/no2hasil.png/)
 
 #### No. 3
 Cari username dan password ketika login di "ppid.dpr.go.id"!
