@@ -57,9 +57,9 @@ Temukan paket dari web-web yang menggunakan basic authentication method!
 ##### Penyelesaian
 Gunakan filter :
 ```
-HTTP
+http.authbasic
 ```
-![Step 1](./images/No4/1.PNG/)
+![Step 1](./images/No4/1.PNG)
 
 Karena semua website HTTP masih menggunakan basic authentication
 
@@ -126,7 +126,7 @@ ftp.request.command == RETR
 ```
 ![Step 1](./images/No8/no8.png/)
 Follow satu persatu, cek file yang menggunakan Microsoft FTP Service.
-![Step 2](./images/No8/8hasil.png/)
+![Step 2](./images/No8/no8hasil.png)
 
 #### No. 9
 Cari username dan password ketika login FTP pada localhost!
