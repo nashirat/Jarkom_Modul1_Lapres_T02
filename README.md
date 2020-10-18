@@ -167,7 +167,7 @@ Filter sehingga wireshark hanya mengambil paket yang berasal dari port 80!
 ##### Penyelesaian
 Gunakan Capture Filter : 
 ```
-src port 21
+src port 80
 ```
 ![Step 1](./images/No12/1.PNG/)
 
