@@ -14,11 +14,11 @@ Gunakan filter :
 http.host == testing.mekanis.me
 ```
 
-![Step 1](https://github.com/bagasimmanuel/Jarkom_Modul3_Lapres_T02/blob/main/img/1.PNG)
+![Step 1](./images/No1/no1.png/)
 
 Lalu follow TCP Stream
 
-![Step 2](https://github.com/bagasimmanuel/Jarkom_Modul3_Lapres_T02/blob/main/img/2.PNG)
+![Step 2]./images/No1/no2.png/)
 
 #### No. 2
 Simpan gambar "Tim_Kunjungan_Kerja_BAKN_DPR_RI_ke_Sukabumi141436.jpg"!
