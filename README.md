@@ -14,11 +14,11 @@ Gunakan filter :
 http.host == testing.mekanis.me
 ```
 
-![Step 1](./images/No1/no1.png/)
+![Step 1](./images/No1/1.png/)
 
 Lalu follow TCP Stream
 
-![Step 2]./images/No1/no2.png/)
+![Step 2](./images/No1/2.png/)
 
 #### No. 2
 Simpan gambar "Tim_Kunjungan_Kerja_BAKN_DPR_RI_ke_Sukabumi141436.jpg"!
